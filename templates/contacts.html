@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block style %}
+	{% include "inc-style.html" %}
+{% endblock %}
+{% block menu %}
+	{% include "inc-menu.html" %}
+{% endblock %}
+{% block body %}
+	<section class="banner">
+		<div class="inner">
+			<h4>Address</h4>
+			<p>Saint-P. nevskiy 1</p>
+		</div>
+	</section>
+
+	<form action="" method="post" class="from_con">
+		<fieldset>
+			<legend>Send us</legend>
+			<p>
+				<label class="title" for="email">Email:</label>
+				<input type="text" name="email" id="email">
+			</p>
+			<p>
+				<p><label class="title" for="message">Message:</label></p>
+				<textarea name="message" id="message"></textarea>
+			</p>
+			<div class="submit"><input type="submit" value="Send" /></div>
+		</fieldset>
+	</form>
+{% endblock %}
+{% block footer %}
+	{% include "inc-footer.html" %}
+{% endblock %}
+
+
+
+
+
+
