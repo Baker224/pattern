@@ -6,4 +6,3 @@ def date_front(request: dict):
 
 
 fronts = [date_front]
-

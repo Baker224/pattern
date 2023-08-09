@@ -1,6 +1,7 @@
 from datetime import datetime
 from patterns.behavioral_patterns import FileWriter
 
+
 class SingletonByName(type):
 
     def __init__(cls, name, bases, attrs, **kwargs):
