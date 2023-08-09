@@ -7,21 +7,26 @@
 {% endblock %}
 {% block body %}
 	<div class="for-all-new">
-		<a href="/create-category/">Create new course</a>
+		<a href="/create-category/">Create new category</a>
 	</div>
 	<div class="for-all-new">
 		<h4>Categories list</h4>
 		{% for item in objects_list %}
 		<li>
 			{{ item.name }} <span>(courses count: {{ item.course_count() }})</span>
-			<a href="/courses-list/?id={{item.id}}">Show courses list</a>
+			<a href="/courses-list/?id={{item.id}}">Show curses list</a>
 		</li>
 		{% endfor %}
 	</div>
+    <div class="for-all-new">
+		<li>
+			<a href="/student-list/">Students list</a>
+		</li>
+		<li>
+			<a href="/create-student/">Create student</a>
+		</li>
+		<li>
+			<a href="/add-student/">Add student to the course</a>
+		</li>
+	</div>
 {% endblock %}
-{% block footer %}
-	{% include "inc-footer.html" %}
-{% endblock %}
-
-
-
